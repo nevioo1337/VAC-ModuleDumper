@@ -18,7 +18,7 @@ void __stdcall LoadVACModuleDetour(DWORD* VACModule, char flags) {
         std::cout << "[+] LoadVACModule called (" << std::dec << moduleCounter << ")" << std::endl;
         CreateDirectoryA(dumpPath.c_str(), NULL);
         std::ofstream file(dumpPath + "\\VACModule_" + std::to_string(moduleCounter) + ".dll", std::ios::out | std::ios::binary);
-        file.write((const char*)VACModule[6], VACModule[5]);
+        file.write((char*)VACModule[6], VACModule[5]);
         file.close();
 
         moduleCounter++;
