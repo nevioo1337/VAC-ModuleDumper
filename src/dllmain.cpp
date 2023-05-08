@@ -38,7 +38,7 @@ void moduleDumper() {
 	}
     std::cout << "[1/3] Found steamservice.dll" << std::endl;
 
-    uintptr_t funcPtr = util::findSig(steamService, "55 8B EC 83 EC ? 53 56 8B 75 ? 8B D9 83 7E");
+    uintptr_t funcPtr = util::findSig(steamService, "55 8B EC 83 EC 28 53 56 8B 75 08 8B D9 83 7E 0C 00 0F 85 ? ? ? ?");
 	std::cout << "[2/3] Found signature at: 0x" << std::hex << funcPtr << std::endl;
 
     MH_Initialize();
