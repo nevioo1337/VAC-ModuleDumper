@@ -5,7 +5,7 @@ Dumps VAC(Valve Anti-Cheat) modules that get streamed and mapped while playing a
 
 ## Usage
 - Launch Steam with administrative privileges.
-- Use a manual mapping injector, such as [Xenos](https://github.com/DarthTon/Xenos), to inject the DLL.
+- Use a manual mapping injector, such as [Xenos](https://github.com/DarthTon/Xenos), to inject the DLL into steam.exe.
 - Start a VAC-protected game, such as Counter-Strike: Global Offensive.
 - Play the game for at least one hour.
 - Profit.
