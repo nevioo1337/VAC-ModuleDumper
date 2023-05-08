@@ -3,6 +3,13 @@ Dumps VAC(Valve Anti-Cheat) modules that get streamed and mapped while playing a
 
 ![Screenshot 2023-05-07 175548](https://user-images.githubusercontent.com/102999825/236688489-adae4297-7a3a-4210-a667-2e77ae0160b4.png)
 
+## Usage
+- Launch Steam with administrative privileges.
+- Use a manual mapping injector, such as [Xenos](https://github.com/DarthTon/Xenos), to inject the DLL.
+- Start a VAC-protected game, such as Counter-Strike: Global Offensive.
+- Play the game for at least one hour.
+- Profit.
+
 ## LoadVACModule pseudocode
 ```
 // #STR: "c:\\buildslave\\steam_rel_client_hotfix_win32\\build\\src\, "pModule->m_hModule == NULL", "c:\\buildslave\\steam_rel_client_hotfix_win32\\build\\src\, "pModule->m_pModule == NULL", "_runfunc@20"
